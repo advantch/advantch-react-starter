@@ -71,10 +71,11 @@ shadcn/ui - [Documentation](https://ui.shadcn.com/docs)
 
 ### Work Expectations for collaboration
 
-- Time:
-- > This repo took me 4 hours to setup from start to finish. I expect this same level of estimates otherwise it's not worth it for the business.
+#### Time:
+- This repo took me 4 hours to setup from start to finish. I expect this same level of estimates otherwise it's not worth it for the business.
 
-- My Working style
+#### My Working style
+
 * I work very fast and have tight deadlines.
 * A lot of the stuff you will have to figure out for your self.
 * I expect you to use AI a lot to make the work go faster for yourself. I can give pointers and access.
