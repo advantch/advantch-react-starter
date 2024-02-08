@@ -26,10 +26,6 @@ NA. This is not a community project.
 
 NA
 
-## License
-
-NA
-
 ## Libs
 
 shadcn/ui - [Documentation](https://ui.shadcn.com/docs)
