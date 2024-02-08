@@ -27,6 +27,7 @@ import {
 } from '@/components/ui/tabs'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '@/components/ui/resizable'
+import { useMailLayoutState } from '@/pages/mail/state.js'
 
 interface MailProps {
   accounts: {
@@ -46,9 +47,9 @@ export function Mail({
 }: MailProps) {
   const width = window.innerWidth
   const defaultLayout = [230, 300, width - 230 - 300]
-  const [isCollapsed, setIsCollapsed] = React.useState(false)
   const [mail] = useMail()
-
+  const navCollapsedSize = 4
+  const { isCollapsed, setIsCollapsed, setIsExpanded } = useMailLayoutState()
   return (
     <TooltipProvider delayDuration={0}>
       <ResizablePanelGroup
@@ -57,12 +58,15 @@ export function Mail({
       >
         <ResizablePanel
           defaultSize={defaultLayout[0]}
-          collapsedSize={3}
+          collapsedSize={navCollapsedSize}
           collapsible={true}
           minSize={15}
           maxSize={20}
           onCollapse={(collapsed) => {
             setIsCollapsed(collapsed)
+          }}
+          onExpand={() => {
+            setIsExpanded()
           }}
           className={cn(isCollapsed && 'min-w-[50px] transition-all duration-300 ease-in-out')}
         >

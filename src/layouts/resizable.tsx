@@ -6,7 +6,7 @@ import {
 
 import { Nav } from './components/nav'
 import { cn } from '@/lib/utils'
-
+import { routes } from '@/lib/routes'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '@/components/ui/resizable'
 import { useLayoutState } from '@/layouts/state.js'
@@ -15,19 +15,19 @@ import { useLayoutState } from '@/layouts/state.js'
 const tabs = [
   {
     title: 'Home',
-    href: '/',
+    href: routes.home,
     icon: Home,
     variant: 'ghost',
   },
   {
     title: 'Dashboard',
-    href: '/dashboard/',
+    href: routes.dashboard,
     icon: Home,
     variant: 'ghost',
   },
   {
     title: 'Emails',
-    href: '/emails/',
+    href: routes.mail,
     icon: Database,
     variant: 'ghost',
   },
@@ -36,26 +36,21 @@ const tabs = [
 export default function ResizableLayout({ children }) {
   const { isCollapsed, setIsCollapsed, setIsExpanded } = useLayoutState()
   const windowWidth = window.innerWidth
-  const defaultLayout = [265, windowWidth - 265]
+  const defaultLayout = [200, windowWidth - 200]
   const navCollapsedSize = 4
 
   return (
     <TooltipProvider delayDuration={0}>
       <ResizablePanelGroup
         direction="horizontal"
-        onLayout={(sizes) => {
-          document.cookie = `react-resizable-panels:layout=${JSON.stringify(
-                        sizes,
-                    )}`
-        }}
         className="h-full max-h-[800px] items-stretch"
       >
         <ResizablePanel
           defaultSize={defaultLayout[0]}
           collapsedSize={navCollapsedSize}
           collapsible={true}
-          minSize={15}
-          maxSize={20}
+          minSize={10}
+          maxSize={15}
           onCollapse={() => {
             setIsCollapsed()
           }}

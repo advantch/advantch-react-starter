@@ -21,8 +21,6 @@ src/
 |-- layouts/
 |   |-- components/
 |   |   `-- nav.tsx
-|   |-- LoginLayout/
-|   |   `-- LoginLayout.tsx
 |   |-- index.ts
 |   `-- state.js
 |-- lib/
