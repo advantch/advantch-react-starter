@@ -82,3 +82,12 @@ shadcn/ui - [Documentation](https://ui.shadcn.com/docs)
 * Im very short on time though there are somethings that you can do for yourself to get up to speed. Im ok with you having a look at the code, first, gather some questions you cannot figure for yourself and then we have a call to get you started.
 * I will make a task as clear as i can, if something is not clear for you, you can ask.
 * I work on github only. Via PRs.
+* If you deliver, fast and on time, you will get a lot of work and better rates.
+
+
+### Code writing & Tips
+
+- Make it work first, then make it nice. Our customers care about function, they don't care how the code is written.
+- Use AI. Read the docs, ask AI to help. 
+- **USE AI**
+- run pnpm lint:fix to cleanup the code.
