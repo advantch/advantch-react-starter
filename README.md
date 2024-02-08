@@ -4,7 +4,11 @@ Advantch React UI Components Example
 
 ## Installation and Setup
 
-### `pnpm install`
+`pnpm install` && `pnpm run dev` to start.
+
+Go to `http://localhost:5173`
+
+### Folder Structure
 
 Below is the folder structure for the project:
 
