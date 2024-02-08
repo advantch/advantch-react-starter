@@ -5,17 +5,22 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 import reportWebVitals from './reportWebVitals'
 import { routes } from '@/lib/routes'
-import { Page } from '@/pages/home/page'
-import { Dashboard } from '@/pages/dashboard/page'
+import Home from '@/pages/home/page'
+import Dashboard from '@/pages/dashboard/page'
+import MailPage from '@/pages/mail/page'
 
 const router = createBrowserRouter([
   {
     path: routes.home,
-    element: <Page />,
+    element: <Home />,
   },
   {
     path: routes.dashboard,
     element: <Dashboard />,
+  },
+  {
+    path: routes.mail,
+    element: <MailPage />,
   },
 ])
 

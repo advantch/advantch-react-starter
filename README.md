@@ -8,57 +8,16 @@ Advantch React UI Components Example
 
 Below is the folder structure for the project:
 
+Follow something similar when creating a new page.
+
 ```
 src/
 |-- assets/
-|   `-- fonts/
-|       `-- aspekta/
-|           `-- Aspekta-550.ttf
 |-- components/
 |   `-- ui/
 |       |-- alert-dialog.tsx
 |       |-- alert.tsx
 |       |-- aspect-ratio.tsx
-|       |-- avatar.tsx
-|       |-- badge.tsx
-|       |-- button.tsx
-|       |-- card.tsx
-|       |-- carousel.tsx
-|       |-- checkbox.tsx
-|       |-- collapsible.tsx
-|       |-- command.tsx
-|       |-- context-menu.tsx
-|       |-- dialog.tsx
-|       |-- drawer.tsx
-|       |-- dropdown-menu.tsx
-|       |-- form.tsx
-|       |-- hover-card.tsx
-|       |-- input.tsx
-|       |-- label.tsx
-|       |-- menubar.tsx
-|       |-- navigation-menu.tsx
-|       |-- pagination.tsx
-|       |-- popover.tsx
-|       |-- progress.tsx
-|       |-- radio-group.tsx
-|       |-- resizable.tsx
-|       |-- scroll-area.tsx
-|       |-- select.tsx
-|       |-- separator.tsx
-|       |-- sheet.tsx
-|       |-- skeleton.tsx
-|       |-- slider.tsx
-|       |-- sonner.tsx
-|       |-- switch.tsx
-|       |-- table.tsx
-|       |-- tabs.tsx
-|       |-- textarea.tsx
-|       |-- toggle-group.tsx
-|       |-- toggle.tsx
-|       |-- toaster.tsx
-|       |-- toast.tsx
-|       |-- tooltip.tsx
-|       `-- use-toast.ts
 |-- layouts/
 |   |-- components/
 |   |   `-- nav.tsx
@@ -73,12 +32,6 @@ src/
 |   |-- dashboard/
 |   |   |-- components/
 |   |   |   |-- date-range-picker.tsx
-|   |   |   |-- main-nav.tsx
-|   |   |   |-- overview.tsx
-|   |   |   |-- recent-sales.tsx
-|   |   |   |-- search.tsx
-|   |   |   |-- team-switcher.tsx
-|   |   |   `-- user-nav.tsx
 |   |   `-- page.tsx
 |   |-- home/
 |   |   `-- page.tsx

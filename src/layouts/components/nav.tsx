@@ -9,7 +9,6 @@ import {
   TooltipTrigger,
 } from '@/components/ui/tooltip'
 import { buttonVariants } from '@/components/ui/button'
-import { useLayoutState } from '@/layouts/state.js'
 
 interface NavLink {
   title: string
@@ -24,8 +23,7 @@ interface NavProps {
   links: NavLink[]
 }
 
-export function Nav({ links }: NavProps) {
-  const { isCollapsed } = useLayoutState()
+export function Nav({ links, isCollapsed }: NavProps) {
   const pathname = window.location.pathname
   const isActive = (href: string) => pathname === href || pathname.startsWith(href)
 

@@ -8,7 +8,7 @@ import {
 } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 
-export function Page() {
+export default function Home() {
   return (
     <div className="p-4 prose prose-sm w-full mx-auto max-w-5xl">
       <h1>Starer repo for advantch react frontends</h1>
@@ -36,7 +36,7 @@ export function Page() {
           </CardHeader>
           <CardFooter>
             <Button asChild>
-              <Link to="/dashboard">
+              <Link to="/mail">
                 Go to emails page
               </Link>
             </Button>

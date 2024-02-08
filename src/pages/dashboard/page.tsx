@@ -20,7 +20,7 @@ import { Search } from '@/pages/dashboard/components/search'
 import TeamSwitcher from '@/pages/dashboard/components/team-switcher'
 import { UserNav } from '@/pages/dashboard/components/user-nav'
 
-export function Dashboard() {
+export default function Dashboard() {
   return (
     <>
       <div className="flex-col md:flex">
