@@ -1,10 +1,10 @@
 # Advantch React UI
 
-Advantch React UI components.
+Advantch React UI Components Example
 
 ## Installation and Setup
 
-### `pnpm install'
+### `pnpm install`
 
 ## Available Scripts
 
@@ -20,7 +20,7 @@ This command creates a production-ready build of the project. The build is minif
 
 ## Contributing
 
-NA
+NA. This is not a community project.
 
 ## Reporting Issues
 
@@ -28,7 +28,7 @@ NA
 
 ## License
 
-MIT
+NA
 
 ## Libs
 
