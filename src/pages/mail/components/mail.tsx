@@ -14,7 +14,7 @@ import { AccountSwitcher } from '@/pages/mail/components/account-switcher'
 import { MailDisplay } from '@/pages/mail/components/mail-display'
 import { MailList } from '@/pages/mail/components/mail-list'
 import { Nav } from '@/layouts/components/nav'
-import type { Mail } from '@/pages/mail/data'
+import type { Mail as MailT } from '@/pages/mail/data'
 import { useMail } from '@/pages/mail/use-mail'
 import { cn } from '@/lib/utils'
 import { Separator } from '@/components/ui/separator'
@@ -35,7 +35,7 @@ interface MailProps {
     email: string
     icon: React.ReactNode
   }[]
-  mails: Mail[]
+  mails: MailT[]
   defaultLayout: number[] | undefined
   defaultCollapsed?: boolean
   navCollapsedSize: number
